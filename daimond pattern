@@ -1,0 +1,9 @@
+rows = int(input("Enter the number of rows: "))
+
+# Upper part of the diamond
+for i in range(1, rows, 2):
+    print(" " * ((rows - i) // 2) + "*" * i + " " * ((rows - i) // 2))
+
+# Lower part of the diamond
+for i in range(rows, 0, -2):
+    print(" " * ((rows - i) // 2) + "*" * i + " " * ((rows - i) // 2))
